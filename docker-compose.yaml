@@ -1,0 +1,14 @@
+services:
+  new_server:
+    restart : always
+    image : socket
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8009:8009"
+    volumes:
+      - eit-volume:/new_docker_pls/server_data
+
+volumes:
+  eit-volume:
