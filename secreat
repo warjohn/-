@@ -1,1 +1,0 @@
-usr/bin/g++ -fdiagnostics-color=always -g server.cpp -o server -I/usr/include -L/usr/lib -lssl -lcrypto -I/in.h -std=c++17
