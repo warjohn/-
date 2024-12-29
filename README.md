@@ -78,6 +78,16 @@ Once compiled, you can start the server using:
 
 Ensure that your generated SSL keys (`private.key` and `certificate.crt`) are in the same directory or specified correctly in your code.
 
+## Running with Docker
+
+To run the project in a Docker container and expose it on port 8009, use the following command:
+
+```bash
+docker-compose up --build
+```
+
+Ensure your `docker-compose.yml` file is correctly configured to map port 8009 to the container's internal port.
+
 ## Notes
 - Make sure to handle SSL/TLS certificates securely and never expose private keys in public repositories.
 - Always test the setup in a controlled environment before deploying in production.
